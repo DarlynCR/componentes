@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:componentes/src/providers/menu_provider.dart';
+import 'package:componentes/src/utils/icono_string_util.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -27,7 +28,7 @@ class HomePage extends StatelessWidget {
         children: [
           ListTile(
             title: Text(item['texto']),
-            leading: Icon(Icons.account_balance_wallet, color: Colors.blue),
+            leading: getIcon(item['icon']),
             trailing: Icon(Icons.keyboard_arrow_right, color: Colors.blue),
             onTap: () {},
           ),
